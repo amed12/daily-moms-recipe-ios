@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E91F241CED462AECD1836B2 /* Pods_DailyMomsRecipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02926D9D819433D8F9A917C7 /* Pods_DailyMomsRecipe.framework */; };
+		4A32C37728080DF800629049 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A32C37528080DF800629049 /* HomeViewController.swift */; };
+		4A32C37828080DF800629049 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A32C37628080DF800629049 /* HomeViewController.xib */; };
 		4A59217D2807FD9200C4B98B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59217C2807FD9200C4B98B /* AppDelegate.swift */; };
 		4A59217F2807FD9200C4B98B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59217E2807FD9200C4B98B /* SceneDelegate.swift */; };
-		4A5921812807FD9200C4B98B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5921802807FD9200C4B98B /* ViewController.swift */; };
-		4A5921842807FD9200C4B98B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5921822807FD9200C4B98B /* Main.storyboard */; };
 		4A5921862807FD9400C4B98B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5921852807FD9400C4B98B /* Assets.xcassets */; };
 		4A5921892807FD9400C4B98B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5921872807FD9400C4B98B /* LaunchScreen.storyboard */; };
 		4A5921942807FD9400C4B98B /* DailyMomsRecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5921932807FD9400C4B98B /* DailyMomsRecipeTests.swift */; };
 		4A59219E2807FD9400C4B98B /* DailyMomsRecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59219D2807FD9400C4B98B /* DailyMomsRecipeUITests.swift */; };
 		4A5921A02807FD9400C4B98B /* DailyMomsRecipeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59219F2807FD9400C4B98B /* DailyMomsRecipeUITestsLaunchTests.swift */; };
+		A77FD6F06CC7131A21ED08A3 /* Pods_DailyMomsRecipeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94E798E5B344BE6DFAF8D70 /* Pods_DailyMomsRecipeTests.framework */; };
+		FF702A2B442340918BA83E98 /* Pods_DailyMomsRecipe_DailyMomsRecipeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FEDACD6C2533A263EF385E /* Pods_DailyMomsRecipe_DailyMomsRecipeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02926D9D819433D8F9A917C7 /* Pods_DailyMomsRecipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyMomsRecipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13D5B1ABA3212861659A9A30 /* Pods-DailyMomsRecipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyMomsRecipe.release.xcconfig"; path = "Target Support Files/Pods-DailyMomsRecipe/Pods-DailyMomsRecipe.release.xcconfig"; sourceTree = "<group>"; };
+		23583AC4DAC51CC5949BE359 /* Pods-DailyMomsRecipeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyMomsRecipeTests.release.xcconfig"; path = "Target Support Files/Pods-DailyMomsRecipeTests/Pods-DailyMomsRecipeTests.release.xcconfig"; sourceTree = "<group>"; };
+		249DF622B2671F4F79BE441D /* Pods-DailyMomsRecipeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyMomsRecipeTests.debug.xcconfig"; path = "Target Support Files/Pods-DailyMomsRecipeTests/Pods-DailyMomsRecipeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		43FEDACD6C2533A263EF385E /* Pods_DailyMomsRecipe_DailyMomsRecipeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyMomsRecipe_DailyMomsRecipeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A32C37528080DF800629049 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4A32C37628080DF800629049 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		4A5921792807FD9200C4B98B /* DailyMomsRecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyMomsRecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A59217C2807FD9200C4B98B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A59217E2807FD9200C4B98B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4A5921802807FD9200C4B98B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4A5921832807FD9200C4B98B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A5921852807FD9400C4B98B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A5921882807FD9400C4B98B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A59218A2807FD9400C4B98B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		4A5921992807FD9400C4B98B /* DailyMomsRecipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyMomsRecipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A59219D2807FD9400C4B98B /* DailyMomsRecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMomsRecipeUITests.swift; sourceTree = "<group>"; };
 		4A59219F2807FD9400C4B98B /* DailyMomsRecipeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMomsRecipeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		83B14BBDEDCE3CE287534EFC /* Pods-DailyMomsRecipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyMomsRecipe.debug.xcconfig"; path = "Target Support Files/Pods-DailyMomsRecipe/Pods-DailyMomsRecipe.debug.xcconfig"; sourceTree = "<group>"; };
+		9052B4535FECA1AEE0B0FAB0 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyMomsRecipe-DailyMomsRecipeUITests.debug.xcconfig"; path = "Target Support Files/Pods-DailyMomsRecipe-DailyMomsRecipeUITests/Pods-DailyMomsRecipe-DailyMomsRecipeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A94E798E5B344BE6DFAF8D70 /* Pods_DailyMomsRecipeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyMomsRecipeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DA9EB9F947EAD42802B439 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyMomsRecipe-DailyMomsRecipeUITests.release.xcconfig"; path = "Target Support Files/Pods-DailyMomsRecipe-DailyMomsRecipeUITests/Pods-DailyMomsRecipe-DailyMomsRecipeUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E91F241CED462AECD1836B2 /* Pods_DailyMomsRecipe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77FD6F06CC7131A21ED08A3 /* Pods_DailyMomsRecipeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF702A2B442340918BA83E98 /* Pods_DailyMomsRecipe_DailyMomsRecipeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A32C37228080D9F00629049 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4A59217C2807FD9200C4B98B /* AppDelegate.swift */,
+				4A59217E2807FD9200C4B98B /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4A32C37328080DC800629049 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				4A32C37428080DD000629049 /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		4A32C37428080DD000629049 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4A32C37528080DF800629049 /* HomeViewController.swift */,
+				4A32C37628080DF800629049 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		4A5921702807FD9200C4B98B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +124,8 @@
 				4A5921922807FD9400C4B98B /* DailyMomsRecipeTests */,
 				4A59219C2807FD9400C4B98B /* DailyMomsRecipeUITests */,
 				4A59217A2807FD9200C4B98B /* Products */,
+				AA6059B4BC6CD43FE337CF65 /* Pods */,
+				8A603D25E69C6053CC60DD24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +142,8 @@
 		4A59217B2807FD9200C4B98B /* DailyMomsRecipe */ = {
 			isa = PBXGroup;
 			children = (
-				4A59217C2807FD9200C4B98B /* AppDelegate.swift */,
-				4A59217E2807FD9200C4B98B /* SceneDelegate.swift */,
-				4A5921802807FD9200C4B98B /* ViewController.swift */,
-				4A5921822807FD9200C4B98B /* Main.storyboard */,
+				4A32C37328080DC800629049 /* Feature */,
+				4A32C37228080D9F00629049 /* App */,
 				4A5921852807FD9400C4B98B /* Assets.xcassets */,
 				4A5921872807FD9400C4B98B /* LaunchScreen.storyboard */,
 				4A59218A2807FD9400C4B98B /* Info.plist */,
@@ -127,6 +168,29 @@
 			path = DailyMomsRecipeUITests;
 			sourceTree = "<group>";
 		};
+		8A603D25E69C6053CC60DD24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02926D9D819433D8F9A917C7 /* Pods_DailyMomsRecipe.framework */,
+				43FEDACD6C2533A263EF385E /* Pods_DailyMomsRecipe_DailyMomsRecipeUITests.framework */,
+				A94E798E5B344BE6DFAF8D70 /* Pods_DailyMomsRecipeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA6059B4BC6CD43FE337CF65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83B14BBDEDCE3CE287534EFC /* Pods-DailyMomsRecipe.debug.xcconfig */,
+				13D5B1ABA3212861659A9A30 /* Pods-DailyMomsRecipe.release.xcconfig */,
+				9052B4535FECA1AEE0B0FAB0 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests.debug.xcconfig */,
+				A9DA9EB9F947EAD42802B439 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests.release.xcconfig */,
+				249DF622B2671F4F79BE441D /* Pods-DailyMomsRecipeTests.debug.xcconfig */,
+				23583AC4DAC51CC5949BE359 /* Pods-DailyMomsRecipeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A5921A32807FD9400C4B98B /* Build configuration list for PBXNativeTarget "DailyMomsRecipe" */;
 			buildPhases = (
+				215ADF06298EF7343FB4193B /* [CP] Check Pods Manifest.lock */,
 				4A5921752807FD9200C4B98B /* Sources */,
 				4A5921762807FD9200C4B98B /* Frameworks */,
 				4A5921772807FD9200C4B98B /* Resources */,
@@ -151,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A5921A62807FD9400C4B98B /* Build configuration list for PBXNativeTarget "DailyMomsRecipeTests" */;
 			buildPhases = (
+				2114F9483AE6A6051F3F1454 /* [CP] Check Pods Manifest.lock */,
 				4A59218B2807FD9400C4B98B /* Sources */,
 				4A59218C2807FD9400C4B98B /* Frameworks */,
 				4A59218D2807FD9400C4B98B /* Resources */,
@@ -169,6 +235,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A5921A92807FD9400C4B98B /* Build configuration list for PBXNativeTarget "DailyMomsRecipeUITests" */;
 			buildPhases = (
+				F7E4CC29966525585BAEC805 /* [CP] Check Pods Manifest.lock */,
 				4A5921952807FD9400C4B98B /* Sources */,
 				4A5921962807FD9400C4B98B /* Frameworks */,
 				4A5921972807FD9400C4B98B /* Resources */,
@@ -233,7 +300,7 @@
 			files = (
 				4A5921892807FD9400C4B98B /* LaunchScreen.storyboard in Resources */,
 				4A5921862807FD9400C4B98B /* Assets.xcassets in Resources */,
-				4A5921842807FD9200C4B98B /* Main.storyboard in Resources */,
+				4A32C37828080DF800629049 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +320,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2114F9483AE6A6051F3F1454 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DailyMomsRecipeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		215ADF06298EF7343FB4193B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DailyMomsRecipe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7E4CC29966525585BAEC805 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DailyMomsRecipe-DailyMomsRecipeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4A5921752807FD9200C4B98B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A5921812807FD9200C4B98B /* ViewController.swift in Sources */,
 				4A59217D2807FD9200C4B98B /* AppDelegate.swift in Sources */,
 				4A59217F2807FD9200C4B98B /* SceneDelegate.swift in Sources */,
+				4A32C37728080DF800629049 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +433,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4A5921822807FD9200C4B98B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A5921832807FD9200C4B98B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4A5921872807FD9400C4B98B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -434,6 +562,7 @@
 		};
 		4A5921A42807FD9400C4B98B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B14BBDEDCE3CE287534EFC /* Pods-DailyMomsRecipe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,7 +573,6 @@
 				INFOPLIST_FILE = DailyMomsRecipe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -462,6 +590,7 @@
 		};
 		4A5921A52807FD9400C4B98B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13D5B1ABA3212861659A9A30 /* Pods-DailyMomsRecipe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,7 +601,6 @@
 				INFOPLIST_FILE = DailyMomsRecipe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -490,6 +618,7 @@
 		};
 		4A5921A72807FD9400C4B98B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 249DF622B2671F4F79BE441D /* Pods-DailyMomsRecipeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +644,7 @@
 		};
 		4A5921A82807FD9400C4B98B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23583AC4DAC51CC5949BE359 /* Pods-DailyMomsRecipeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +670,7 @@
 		};
 		4A5921AA2807FD9400C4B98B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9052B4535FECA1AEE0B0FAB0 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +694,7 @@
 		};
 		4A5921AB2807FD9400C4B98B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9DA9EB9F947EAD42802B439 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

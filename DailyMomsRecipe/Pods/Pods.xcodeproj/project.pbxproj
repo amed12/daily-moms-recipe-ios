@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		073532D8E1739F320D09CDBC62A1E889 /* Pods-DailyMomsRecipe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C74F58B7C2A1247D9299665C4E0083 /* Pods-DailyMomsRecipe-dummy.m */; };
+		20D2F9EED0E842C6B4C66D1055F1F3E6 /* Pods-DailyMomsRecipeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1463419B0E8723D4E6C0581AB977C2 /* Pods-DailyMomsRecipeTests-dummy.m */; };
+		21DED3AFF2CDF4172D6C8230E1680E5E /* Pods-DailyMomsRecipeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C17DDCE79A6647B68ED3FD36692A3C4B /* Pods-DailyMomsRecipeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BE87D0C2EC95B641826529B8AF842D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		97E13622A38B952B98E9BA107EB5A2E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9872207AEF093D326009D04FB0A88043 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A4E0282ABE33AD5EB84686D62FA8F9C8 /* Pods-DailyMomsRecipe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C92DAE04C6133C1FE0ACF17B1F1300 /* Pods-DailyMomsRecipe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3FDA1E76FB0F34ABEC79B60071FEA0B /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8D5105BB8FEF1BBD9CE19719CFFD596 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFA688B68DE40B16F34A2FE07E58AC10 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B5008117A3AD444021C8A8914C5858 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B5F8670C31AE142B408BE9958067D27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB3B1FC57CA578FD6E68C6AD8A26D733;
+			remoteInfo = "Pods-DailyMomsRecipe";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C1463419B0E8723D4E6C0581AB977C2 /* Pods-DailyMomsRecipeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DailyMomsRecipeTests-dummy.m"; sourceTree = "<group>"; };
+		2080522A8E2E77A5AEBE3EC3D40B5BDE /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DailyMomsRecipe-DailyMomsRecipeUITests"; path = Pods_DailyMomsRecipe_DailyMomsRecipeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20847918B78AB6550936A65864B61973 /* Pods-DailyMomsRecipeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DailyMomsRecipeTests.modulemap"; sourceTree = "<group>"; };
+		2CBCADB922E893924287A9A85DBA9DB6 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DailyMomsRecipe-DailyMomsRecipeUITests.modulemap"; sourceTree = "<group>"; };
+		2E7D49C9AEB540CBE2067FA8185CA4B5 /* Pods-DailyMomsRecipe */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DailyMomsRecipe"; path = Pods_DailyMomsRecipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		375E80B34ADB93A4487BC8B3783A129B /* Pods-DailyMomsRecipe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DailyMomsRecipe.modulemap"; sourceTree = "<group>"; };
+		3F0E9A3E03AB0466FE54D9D677FCBAC5 /* Pods-DailyMomsRecipeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DailyMomsRecipeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4A5393C81D7C23DD82B0E157A2A36520 /* Pods-DailyMomsRecipe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DailyMomsRecipe-acknowledgements.markdown"; sourceTree = "<group>"; };
+		54C92DAE04C6133C1FE0ACF17B1F1300 /* Pods-DailyMomsRecipe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyMomsRecipe-umbrella.h"; sourceTree = "<group>"; };
+		57A0497BF4F75A9FCDB7136995ECBC42 /* Pods-DailyMomsRecipe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DailyMomsRecipe-acknowledgements.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7C2BDE857A36C171C5EEC92D16A69A0F /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DailyMomsRecipe-DailyMomsRecipeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		918FCE137B382A0779EAFD1312F09B0A /* Pods-DailyMomsRecipeTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DailyMomsRecipeTests-Info.plist"; sourceTree = "<group>"; };
+		943FB054908EA31FFF892C5A94B1542F /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyMomsRecipe-DailyMomsRecipeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		96B5008117A3AD444021C8A8914C5858 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DailyMomsRecipe-DailyMomsRecipeUITests-dummy.m"; sourceTree = "<group>"; };
+		98339ABA22898275A7F6E1EDC517A20C /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DailyMomsRecipe-DailyMomsRecipeUITests-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8D5105BB8FEF1BBD9CE19719CFFD596 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyMomsRecipe-DailyMomsRecipeUITests-umbrella.h"; sourceTree = "<group>"; };
+		B2E054ED17FCC0EF733CB92E65AA6BE7 /* Pods-DailyMomsRecipe-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DailyMomsRecipe-Info.plist"; sourceTree = "<group>"; };
+		B7C74F58B7C2A1247D9299665C4E0083 /* Pods-DailyMomsRecipe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DailyMomsRecipe-dummy.m"; sourceTree = "<group>"; };
+		C17DDCE79A6647B68ED3FD36692A3C4B /* Pods-DailyMomsRecipeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyMomsRecipeTests-umbrella.h"; sourceTree = "<group>"; };
+		C1FE29ACEE82286854F7A6D7694B49FE /* Pods-DailyMomsRecipeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyMomsRecipeTests.release.xcconfig"; sourceTree = "<group>"; };
+		D89CBDBCE1064AF04131D9A3A43EF736 /* Pods-DailyMomsRecipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyMomsRecipe.debug.xcconfig"; sourceTree = "<group>"; };
+		E434A13387CA35168EEB0DBDFF77B59A /* Pods-DailyMomsRecipeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DailyMomsRecipeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EAA8411046A1E4D08C42C9816C6A8371 /* Pods-DailyMomsRecipeTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DailyMomsRecipeTests"; path = Pods_DailyMomsRecipeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE7A20CB09A215BBFD66D0780927ED9 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyMomsRecipe-DailyMomsRecipeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F279C8F76F786B2DA2679DD0092A798D /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DailyMomsRecipe-DailyMomsRecipeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F3E1EA81616B9EEBD4328FF685F112B3 /* Pods-DailyMomsRecipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyMomsRecipe.release.xcconfig"; sourceTree = "<group>"; };
+		FFDDD1A29E195F3C244BE9C9F328DFC1 /* Pods-DailyMomsRecipeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyMomsRecipeTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD1E3D7C7E1BF6E234EFB178D2270A1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BE87D0C2EC95B641826529B8AF842D0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE026A8A406801B418DB9A0F48F4746B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97E13622A38B952B98E9BA107EB5A2E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E31F79EB6DC26C8EBB7F10E4BB73BACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9872207AEF093D326009D04FB0A88043 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E0445A55D021678EE93E3A5ED50080A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5281584075B34684285E1DEC2E348EE1 /* Pods-DailyMomsRecipe */,
+				964C49503D2676CEBF00612C2D15865A /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests */,
+				DD5F905F450EBCCE5BBE70D1250F6A33 /* Pods-DailyMomsRecipeTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5281584075B34684285E1DEC2E348EE1 /* Pods-DailyMomsRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				375E80B34ADB93A4487BC8B3783A129B /* Pods-DailyMomsRecipe.modulemap */,
+				4A5393C81D7C23DD82B0E157A2A36520 /* Pods-DailyMomsRecipe-acknowledgements.markdown */,
+				57A0497BF4F75A9FCDB7136995ECBC42 /* Pods-DailyMomsRecipe-acknowledgements.plist */,
+				B7C74F58B7C2A1247D9299665C4E0083 /* Pods-DailyMomsRecipe-dummy.m */,
+				B2E054ED17FCC0EF733CB92E65AA6BE7 /* Pods-DailyMomsRecipe-Info.plist */,
+				54C92DAE04C6133C1FE0ACF17B1F1300 /* Pods-DailyMomsRecipe-umbrella.h */,
+				D89CBDBCE1064AF04131D9A3A43EF736 /* Pods-DailyMomsRecipe.debug.xcconfig */,
+				F3E1EA81616B9EEBD4328FF685F112B3 /* Pods-DailyMomsRecipe.release.xcconfig */,
+			);
+			name = "Pods-DailyMomsRecipe";
+			path = "Target Support Files/Pods-DailyMomsRecipe";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		964C49503D2676CEBF00612C2D15865A /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2CBCADB922E893924287A9A85DBA9DB6 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests.modulemap */,
+				F279C8F76F786B2DA2679DD0092A798D /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests-acknowledgements.markdown */,
+				7C2BDE857A36C171C5EEC92D16A69A0F /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests-acknowledgements.plist */,
+				96B5008117A3AD444021C8A8914C5858 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests-dummy.m */,
+				98339ABA22898275A7F6E1EDC517A20C /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests-Info.plist */,
+				A8D5105BB8FEF1BBD9CE19719CFFD596 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests-umbrella.h */,
+				943FB054908EA31FFF892C5A94B1542F /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests.debug.xcconfig */,
+				EFE7A20CB09A215BBFD66D0780927ED9 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests.release.xcconfig */,
+			);
+			name = "Pods-DailyMomsRecipe-DailyMomsRecipeUITests";
+			path = "Target Support Files/Pods-DailyMomsRecipe-DailyMomsRecipeUITests";
+			sourceTree = "<group>";
+		};
+		C8ABB7CAA4F5521A04736CB113BD3674 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E7D49C9AEB540CBE2067FA8185CA4B5 /* Pods-DailyMomsRecipe */,
+				2080522A8E2E77A5AEBE3EC3D40B5BDE /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests */,
+				EAA8411046A1E4D08C42C9816C6A8371 /* Pods-DailyMomsRecipeTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				C8ABB7CAA4F5521A04736CB113BD3674 /* Products */,
+				2E0445A55D021678EE93E3A5ED50080A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD5F905F450EBCCE5BBE70D1250F6A33 /* Pods-DailyMomsRecipeTests */ = {
+			isa = PBXGroup;
+			children = (
+				20847918B78AB6550936A65864B61973 /* Pods-DailyMomsRecipeTests.modulemap */,
+				E434A13387CA35168EEB0DBDFF77B59A /* Pods-DailyMomsRecipeTests-acknowledgements.markdown */,
+				3F0E9A3E03AB0466FE54D9D677FCBAC5 /* Pods-DailyMomsRecipeTests-acknowledgements.plist */,
+				0C1463419B0E8723D4E6C0581AB977C2 /* Pods-DailyMomsRecipeTests-dummy.m */,
+				918FCE137B382A0779EAFD1312F09B0A /* Pods-DailyMomsRecipeTests-Info.plist */,
+				C17DDCE79A6647B68ED3FD36692A3C4B /* Pods-DailyMomsRecipeTests-umbrella.h */,
+				FFDDD1A29E195F3C244BE9C9F328DFC1 /* Pods-DailyMomsRecipeTests.debug.xcconfig */,
+				C1FE29ACEE82286854F7A6D7694B49FE /* Pods-DailyMomsRecipeTests.release.xcconfig */,
+			);
+			name = "Pods-DailyMomsRecipeTests";
+			path = "Target Support Files/Pods-DailyMomsRecipeTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		152BA99277598AD1374C04580F303962 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3FDA1E76FB0F34ABEC79B60071FEA0B /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BB8F50D119A5D14E32AD2E593D408AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21DED3AFF2CDF4172D6C8230E1680E5E /* Pods-DailyMomsRecipeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFAC9B8C4129F2CBF40C6BA269BE007E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4E0282ABE33AD5EB84686D62FA8F9C8 /* Pods-DailyMomsRecipe-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		748445500994EB496CEBD3FD954CE957 /* Pods-DailyMomsRecipeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C0031CBC2BD062895CA913EA85017CE /* Build configuration list for PBXNativeTarget "Pods-DailyMomsRecipeTests" */;
+			buildPhases = (
+				3BB8F50D119A5D14E32AD2E593D408AD /* Headers */,
+				20B6B7899893E04D46B3C9373B45F2A8 /* Sources */,
+				CD1E3D7C7E1BF6E234EFB178D2270A1A /* Frameworks */,
+				E7E834308B630E9A1A0B78E631B67939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D6A2F19834A73CAE0E234A26495467B /* PBXTargetDependency */,
+			);
+			name = "Pods-DailyMomsRecipeTests";
+			productName = Pods_DailyMomsRecipeTests;
+			productReference = EAA8411046A1E4D08C42C9816C6A8371 /* Pods-DailyMomsRecipeTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		7EA83AD3D0294B34AA52CE917C02CCF4 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA69A2AEFB09B3C7F81AAA29B7FFD744 /* Build configuration list for PBXNativeTarget "Pods-DailyMomsRecipe-DailyMomsRecipeUITests" */;
+			buildPhases = (
+				152BA99277598AD1374C04580F303962 /* Headers */,
+				5AEAF50D9930CF897FB1DEF6CE97AAC4 /* Sources */,
+				E31F79EB6DC26C8EBB7F10E4BB73BACD /* Frameworks */,
+				C7A0ACD818E6EEBD5A18185E044FDCD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DailyMomsRecipe-DailyMomsRecipeUITests";
+			productName = Pods_DailyMomsRecipe_DailyMomsRecipeUITests;
+			productReference = 2080522A8E2E77A5AEBE3EC3D40B5BDE /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		AB3B1FC57CA578FD6E68C6AD8A26D733 /* Pods-DailyMomsRecipe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D50EB672B6644AA5684032C5CFCA48B4 /* Build configuration list for PBXNativeTarget "Pods-DailyMomsRecipe" */;
+			buildPhases = (
+				FFAC9B8C4129F2CBF40C6BA269BE007E /* Headers */,
+				95DBA0C634D7048ACE84E4EFB36871A6 /* Sources */,
+				DE026A8A406801B418DB9A0F48F4746B /* Frameworks */,
+				D1D2E7587362B530CAF4F5748C36A874 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DailyMomsRecipe";
+			productName = Pods_DailyMomsRecipe;
+			productReference = 2E7D49C9AEB540CBE2067FA8185CA4B5 /* Pods-DailyMomsRecipe */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C8ABB7CAA4F5521A04736CB113BD3674 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB3B1FC57CA578FD6E68C6AD8A26D733 /* Pods-DailyMomsRecipe */,
+				7EA83AD3D0294B34AA52CE917C02CCF4 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests */,
+				748445500994EB496CEBD3FD954CE957 /* Pods-DailyMomsRecipeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7A0ACD818E6EEBD5A18185E044FDCD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1D2E7587362B530CAF4F5748C36A874 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7E834308B630E9A1A0B78E631B67939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20B6B7899893E04D46B3C9373B45F2A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D2F9EED0E842C6B4C66D1055F1F3E6 /* Pods-DailyMomsRecipeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AEAF50D9930CF897FB1DEF6CE97AAC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFA688B68DE40B16F34A2FE07E58AC10 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95DBA0C634D7048ACE84E4EFB36871A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073532D8E1739F320D09CDBC62A1E889 /* Pods-DailyMomsRecipe-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D6A2F19834A73CAE0E234A26495467B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DailyMomsRecipe";
+			target = AB3B1FC57CA578FD6E68C6AD8A26D733 /* Pods-DailyMomsRecipe */;
+			targetProxy = 3B5F8670C31AE142B408BE9958067D27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		463F3BF829D4CD266A1C9620AFDEA298 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 943FB054908EA31FFF892C5A94B1542F /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DailyMomsRecipe-DailyMomsRecipeUITests/Pods-DailyMomsRecipe-DailyMomsRecipeUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DailyMomsRecipe-DailyMomsRecipeUITests/Pods-DailyMomsRecipe-DailyMomsRecipeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5A90A4FF940AA677DC09680CFA8F814B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFE7A20CB09A215BBFD66D0780927ED9 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DailyMomsRecipe-DailyMomsRecipeUITests/Pods-DailyMomsRecipe-DailyMomsRecipeUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DailyMomsRecipe-DailyMomsRecipeUITests/Pods-DailyMomsRecipe-DailyMomsRecipeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		68AEC6B3D34BF369AC7076233C8CE814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E1EA81616B9EEBD4328FF685F112B3 /* Pods-DailyMomsRecipe.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DailyMomsRecipe/Pods-DailyMomsRecipe-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DailyMomsRecipe/Pods-DailyMomsRecipe.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B6B33F0FE2395714144C15112F44A0BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1FE29ACEE82286854F7A6D7694B49FE /* Pods-DailyMomsRecipeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DailyMomsRecipeTests/Pods-DailyMomsRecipeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DailyMomsRecipeTests/Pods-DailyMomsRecipeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B922A05CA1A49B076889BDBD52E338AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D89CBDBCE1064AF04131D9A3A43EF736 /* Pods-DailyMomsRecipe.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DailyMomsRecipe/Pods-DailyMomsRecipe-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DailyMomsRecipe/Pods-DailyMomsRecipe.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D70C7E201254D686E709CA5916B8866F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFDDD1A29E195F3C244BE9C9F328DFC1 /* Pods-DailyMomsRecipeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DailyMomsRecipeTests/Pods-DailyMomsRecipeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DailyMomsRecipeTests/Pods-DailyMomsRecipeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C0031CBC2BD062895CA913EA85017CE /* Build configuration list for PBXNativeTarget "Pods-DailyMomsRecipeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D70C7E201254D686E709CA5916B8866F /* Debug */,
+				B6B33F0FE2395714144C15112F44A0BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA69A2AEFB09B3C7F81AAA29B7FFD744 /* Build configuration list for PBXNativeTarget "Pods-DailyMomsRecipe-DailyMomsRecipeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463F3BF829D4CD266A1C9620AFDEA298 /* Debug */,
+				5A90A4FF940AA677DC09680CFA8F814B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D50EB672B6644AA5684032C5CFCA48B4 /* Build configuration list for PBXNativeTarget "Pods-DailyMomsRecipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B922A05CA1A49B076889BDBD52E338AE /* Debug */,
+				68AEC6B3D34BF369AC7076233C8CE814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

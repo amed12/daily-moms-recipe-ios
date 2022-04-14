@@ -1,0 +1,6 @@
+framework module Pods_DailyMomsRecipe_DailyMomsRecipeUITests {
+  umbrella header "Pods-DailyMomsRecipe-DailyMomsRecipeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
