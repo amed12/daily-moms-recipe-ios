@@ -42,13 +42,21 @@ class HomeViewController: UIViewController {
         segmentedControl.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         // Constraining the height of the segmented control to an arbitrarily chosen value
         segmentedControl.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        segmentedControl.backgroundColor = .clear
-        segmentedControl.tintColor = .clear
+        if #available(iOS 13.0, *) {
+          let image = UIImage()
+          let size = CGSize(width: 1, height: segmentedControl.intrinsicContentSize.height)
+          UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+          image.draw(in: CGRect(origin: .zero, size: size))
+          let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+          UIGraphicsEndImageContext()
+          segmentedControl.setBackgroundImage(scaledImage, for: .normal, barMetrics: .default)
+          segmentedControl.setDividerImage(scaledImage, forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)
+        }
         segmentedControl.setTitleTextAttributes([
-            NSAttributedString.Key.foregroundColor: UIColor.black,
+            NSAttributedString.Key.foregroundColor: UIColor.lightGray,
             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .regular)], for: .normal)
         segmentedControl.setTitleTextAttributes([
-            NSAttributedString.Key.foregroundColor: UIColor.blue,
+            NSAttributedString.Key.foregroundColor: UIColor.black,
             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .regular)], for: .selected)
         segmentedControl.addTarget(self, action: #selector(segmentedControlValueChanged(_:)), for: .valueChanged)
         // Constrain the top of the button bar to the bottom of the segmented control
