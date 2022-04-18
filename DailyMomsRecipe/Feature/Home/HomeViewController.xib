@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="DailyMomsRecipe" customModuleProvider="target">
             <connections>
+                <outlet property="customSegmentedView" destination="QJr-kr-nOB" id="ifl-qd-kte"/>
+                <outlet property="headerImgView" destination="8le-hz-UYL" id="98o-Lf-S64"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,38 +20,65 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8le-hz-UYL">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dining" translatesAutoresizingMaskIntoConstraints="NO" id="8le-hz-UYL">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="vaO-6Y-kfy"/>
+                    </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxH-bs-PgV">
-                    <rect key="frame" x="186" y="53.5" width="42" height="21"/>
+                    <rect key="frame" x="186" y="39.5" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqy-P6-np8">
-                    <rect key="frame" x="331" y="48.5" width="67" height="31"/>
+                    <rect key="frame" x="331" y="34.5" width="67" height="31"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QJr-kr-nOB">
+                    <rect key="frame" x="0.0" y="100" width="414" height="100"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="6zQ-kv-whO"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ae6-Tp-3Ym">
+                    <rect key="frame" x="0.0" y="200" width="414" height="696"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="09y-lA-UPP">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="8le-hz-UYL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DRh-HI-YeH"/>
+                <constraint firstItem="QJr-kr-nOB" firstAttribute="top" secondItem="8le-hz-UYL" secondAttribute="bottom" id="0rA-jX-jRr"/>
+                <constraint firstItem="QJr-kr-nOB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1em-4R-Xye"/>
+                <constraint firstItem="8le-hz-UYL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="DRh-HI-YeH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8le-hz-UYL" secondAttribute="trailing" id="IIV-3E-ml0"/>
                 <constraint firstItem="Xqy-P6-np8" firstAttribute="centerY" secondItem="8le-hz-UYL" secondAttribute="centerY" id="MIq-rW-jaG"/>
                 <constraint firstItem="vxH-bs-PgV" firstAttribute="centerY" secondItem="8le-hz-UYL" secondAttribute="centerY" id="W6C-8a-Pge"/>
                 <constraint firstItem="vxH-bs-PgV" firstAttribute="centerX" secondItem="8le-hz-UYL" secondAttribute="centerX" id="X2H-j7-uXv"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8le-hz-UYL" secondAttribute="bottom" constant="768" id="gr4-RO-c9j"/>
+                <constraint firstItem="ae6-Tp-3Ym" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="h0C-uL-TQM"/>
+                <constraint firstItem="ae6-Tp-3Ym" firstAttribute="top" secondItem="QJr-kr-nOB" secondAttribute="bottom" id="kLy-J3-MLR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xqy-P6-np8" secondAttribute="trailing" constant="16" id="oM4-fe-v7T"/>
                 <constraint firstItem="8le-hz-UYL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oxS-CD-EBg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ae6-Tp-3Ym" secondAttribute="bottom" id="q3s-AZ-cYD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ae6-Tp-3Ym" secondAttribute="trailing" id="uDf-PJ-g5G"/>
+                <constraint firstAttribute="trailing" secondItem="QJr-kr-nOB" secondAttribute="trailing" id="xpJ-Xa-cv8"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="139" y="151"/>
         </view>
     </objects>
     <resources>
+        <image name="dining" width="3211" height="4561"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
