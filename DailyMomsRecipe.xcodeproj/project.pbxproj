@@ -20,6 +20,8 @@
 		4A7FB9FB280E9E3F009BD6E8 /* PopularItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FB9FA280E9E3F009BD6E8 /* PopularItemCell.swift */; };
 		4A7FB9FD280EA013009BD6E8 /* ContentItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FB9FC280EA013009BD6E8 /* ContentItemCell.swift */; };
 		4A7FB9FF280EA3B6009BD6E8 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FB9FE280EA3B6009BD6E8 /* Models.swift */; };
+		4ACC763B280FC83200D3FB78 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC763A280FC83200D3FB78 /* HeaderView.swift */; };
+		4ACC763E280FCE7B00D3FB78 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC763D280FCE7B00D3FB78 /* Extension.swift */; };
 		A77FD6F06CC7131A21ED08A3 /* Pods_DailyMomsRecipeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94E798E5B344BE6DFAF8D70 /* Pods_DailyMomsRecipeTests.framework */; };
 		FF702A2B442340918BA83E98 /* Pods_DailyMomsRecipe_DailyMomsRecipeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FEDACD6C2533A263EF385E /* Pods_DailyMomsRecipe_DailyMomsRecipeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		4A7FB9FA280E9E3F009BD6E8 /* PopularItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularItemCell.swift; sourceTree = "<group>"; };
 		4A7FB9FC280EA013009BD6E8 /* ContentItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentItemCell.swift; sourceTree = "<group>"; };
 		4A7FB9FE280EA3B6009BD6E8 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		4ACC763A280FC83200D3FB78 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		4ACC763D280FCE7B00D3FB78 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		83B14BBDEDCE3CE287534EFC /* Pods-DailyMomsRecipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyMomsRecipe.debug.xcconfig"; path = "Target Support Files/Pods-DailyMomsRecipe/Pods-DailyMomsRecipe.debug.xcconfig"; sourceTree = "<group>"; };
 		9052B4535FECA1AEE0B0FAB0 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyMomsRecipe-DailyMomsRecipeUITests.debug.xcconfig"; path = "Target Support Files/Pods-DailyMomsRecipe-DailyMomsRecipeUITests/Pods-DailyMomsRecipe-DailyMomsRecipeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A94E798E5B344BE6DFAF8D70 /* Pods_DailyMomsRecipeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyMomsRecipeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +126,7 @@
 				4A7FB9FA280E9E3F009BD6E8 /* PopularItemCell.swift */,
 				4A7FB9FC280EA013009BD6E8 /* ContentItemCell.swift */,
 				4A7FB9FE280EA3B6009BD6E8 /* Models.swift */,
+				4ACC763A280FC83200D3FB78 /* HeaderView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 		4A59217B2807FD9200C4B98B /* DailyMomsRecipe */ = {
 			isa = PBXGroup;
 			children = (
+				4ACC763C280FCE6400D3FB78 /* Shared */,
 				4A32C37328080DC800629049 /* Feature */,
 				4A32C37228080D9F00629049 /* App */,
 				4A5921852807FD9400C4B98B /* Assets.xcassets */,
@@ -175,6 +181,14 @@
 				4A59219F2807FD9400C4B98B /* DailyMomsRecipeUITestsLaunchTests.swift */,
 			);
 			path = DailyMomsRecipeUITests;
+			sourceTree = "<group>";
+		};
+		4ACC763C280FCE6400D3FB78 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4ACC763D280FCE7B00D3FB78 /* Extension.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		8A603D25E69C6053CC60DD24 /* Frameworks */ = {
@@ -211,6 +225,7 @@
 				4A5921752807FD9200C4B98B /* Sources */,
 				4A5921762807FD9200C4B98B /* Frameworks */,
 				4A5921772807FD9200C4B98B /* Resources */,
+				D58BCD8241974FDC9A88F16A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +263,7 @@
 				4A5921952807FD9400C4B98B /* Sources */,
 				4A5921962807FD9400C4B98B /* Frameworks */,
 				4A5921972807FD9400C4B98B /* Resources */,
+				FE7A4684DE12A7861BBECD6A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -374,6 +390,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D58BCD8241974FDC9A88F16A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyMomsRecipe/Pods-DailyMomsRecipe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyMomsRecipe/Pods-DailyMomsRecipe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DailyMomsRecipe/Pods-DailyMomsRecipe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F7E4CC29966525585BAEC805 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,6 +429,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FE7A4684DE12A7861BBECD6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyMomsRecipe-DailyMomsRecipeUITests/Pods-DailyMomsRecipe-DailyMomsRecipeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyMomsRecipe-DailyMomsRecipeUITests/Pods-DailyMomsRecipe-DailyMomsRecipeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DailyMomsRecipe-DailyMomsRecipeUITests/Pods-DailyMomsRecipe-DailyMomsRecipeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -409,6 +459,8 @@
 				4A7FB9FF280EA3B6009BD6E8 /* Models.swift in Sources */,
 				4A7FB9FB280E9E3F009BD6E8 /* PopularItemCell.swift in Sources */,
 				4A32C37728080DF800629049 /* HomeViewController.swift in Sources */,
+				4ACC763B280FC83200D3FB78 /* HeaderView.swift in Sources */,
+				4ACC763E280FCE7B00D3FB78 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

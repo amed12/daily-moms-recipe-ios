@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -47,7 +46,7 @@
                     </constraints>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ae6-Tp-3Ym">
-                    <rect key="frame" x="0.0" y="200" width="414" height="696"/>
+                    <rect key="frame" x="0.0" y="200" width="414" height="660"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="09y-lA-UPP">
                         <size key="itemSize" width="128" height="128"/>
@@ -71,7 +70,7 @@
                 <constraint firstItem="ae6-Tp-3Ym" firstAttribute="top" secondItem="QJr-kr-nOB" secondAttribute="bottom" id="kLy-J3-MLR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xqy-P6-np8" secondAttribute="trailing" constant="16" id="oM4-fe-v7T"/>
                 <constraint firstItem="8le-hz-UYL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oxS-CD-EBg"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ae6-Tp-3Ym" secondAttribute="bottom" id="q3s-AZ-cYD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ae6-Tp-3Ym" secondAttribute="bottom" constant="36" id="q3s-AZ-cYD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ae6-Tp-3Ym" secondAttribute="trailing" id="uDf-PJ-g5G"/>
                 <constraint firstAttribute="trailing" secondItem="QJr-kr-nOB" secondAttribute="trailing" id="xpJ-Xa-cv8"/>
             </constraints>
