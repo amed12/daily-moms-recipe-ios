@@ -12,12 +12,18 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var customSegmentedView: UIView!
     @IBOutlet weak var headerImgView: UIImageView!
+    @IBOutlet weak var menuCollectionView: UICollectionView!
     var buttonBar : UIView = UIView()
+    static let sectionHeaderElementKind = "section-header-element-kind"
+    typealias DataSource = UICollectionViewDiffableDataSource<Category, Item>
+    private lazy var dataSource = makeDataSource()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         headerImgView.image = UIImage(named: "dining")
         customSegmentedControl()
-
+        configureCollectionView()
         // Do any additional setup after loading the view.
     }
     
@@ -66,6 +72,25 @@ class HomeViewController: UIViewController {
         buttonBar.leftAnchor.constraint(equalTo: segmentedControl.leftAnchor).isActive = true
         // Constrain the button bar to the width of the segmented control divided by the number of segments
         buttonBar.widthAnchor.constraint(equalTo: segmentedControl.widthAnchor, multiplier: 0.98 / CGFloat(segmentedControl.numberOfSegments)).isActive = true
+    }
+    
+    func configureCollectionView(){
+        
+    }
+    
+    func makeDataSource() -> DataSource{
+        let dataSource = DataSource(
+            collectionView: menuCollectionView,
+            cellProvider: { (collectionView, indexPath, item) ->
+              UICollectionViewCell? in
+              // 2
+              let cell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: PopularItemCell.reuseIdentifer,
+                for: indexPath) as? PopularItemCell
+                cell?.title = item.name
+              return cell
+          })
+          return dataSource
     }
     
     @objc func segmentedControlValueChanged(_ sender: UISegmentedControl) {

@@ -17,6 +17,9 @@
 		4A5921942807FD9400C4B98B /* DailyMomsRecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5921932807FD9400C4B98B /* DailyMomsRecipeTests.swift */; };
 		4A59219E2807FD9400C4B98B /* DailyMomsRecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59219D2807FD9400C4B98B /* DailyMomsRecipeUITests.swift */; };
 		4A5921A02807FD9400C4B98B /* DailyMomsRecipeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A59219F2807FD9400C4B98B /* DailyMomsRecipeUITestsLaunchTests.swift */; };
+		4A7FB9FB280E9E3F009BD6E8 /* PopularItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FB9FA280E9E3F009BD6E8 /* PopularItemCell.swift */; };
+		4A7FB9FD280EA013009BD6E8 /* ContentItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FB9FC280EA013009BD6E8 /* ContentItemCell.swift */; };
+		4A7FB9FF280EA3B6009BD6E8 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FB9FE280EA3B6009BD6E8 /* Models.swift */; };
 		A77FD6F06CC7131A21ED08A3 /* Pods_DailyMomsRecipeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94E798E5B344BE6DFAF8D70 /* Pods_DailyMomsRecipeTests.framework */; };
 		FF702A2B442340918BA83E98 /* Pods_DailyMomsRecipe_DailyMomsRecipeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FEDACD6C2533A263EF385E /* Pods_DailyMomsRecipe_DailyMomsRecipeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +60,9 @@
 		4A5921992807FD9400C4B98B /* DailyMomsRecipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyMomsRecipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A59219D2807FD9400C4B98B /* DailyMomsRecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMomsRecipeUITests.swift; sourceTree = "<group>"; };
 		4A59219F2807FD9400C4B98B /* DailyMomsRecipeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMomsRecipeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A7FB9FA280E9E3F009BD6E8 /* PopularItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularItemCell.swift; sourceTree = "<group>"; };
+		4A7FB9FC280EA013009BD6E8 /* ContentItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentItemCell.swift; sourceTree = "<group>"; };
+		4A7FB9FE280EA3B6009BD6E8 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		83B14BBDEDCE3CE287534EFC /* Pods-DailyMomsRecipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyMomsRecipe.debug.xcconfig"; path = "Target Support Files/Pods-DailyMomsRecipe/Pods-DailyMomsRecipe.debug.xcconfig"; sourceTree = "<group>"; };
 		9052B4535FECA1AEE0B0FAB0 /* Pods-DailyMomsRecipe-DailyMomsRecipeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyMomsRecipe-DailyMomsRecipeUITests.debug.xcconfig"; path = "Target Support Files/Pods-DailyMomsRecipe-DailyMomsRecipeUITests/Pods-DailyMomsRecipe-DailyMomsRecipeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A94E798E5B344BE6DFAF8D70 /* Pods_DailyMomsRecipeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyMomsRecipeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +119,9 @@
 			children = (
 				4A32C37528080DF800629049 /* HomeViewController.swift */,
 				4A32C37628080DF800629049 /* HomeViewController.xib */,
+				4A7FB9FA280E9E3F009BD6E8 /* PopularItemCell.swift */,
+				4A7FB9FC280EA013009BD6E8 /* ContentItemCell.swift */,
+				4A7FB9FE280EA3B6009BD6E8 /* Models.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -396,6 +405,9 @@
 			files = (
 				4A59217D2807FD9200C4B98B /* AppDelegate.swift in Sources */,
 				4A59217F2807FD9200C4B98B /* SceneDelegate.swift in Sources */,
+				4A7FB9FD280EA013009BD6E8 /* ContentItemCell.swift in Sources */,
+				4A7FB9FF280EA3B6009BD6E8 /* Models.swift in Sources */,
+				4A7FB9FB280E9E3F009BD6E8 /* PopularItemCell.swift in Sources */,
 				4A32C37728080DF800629049 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,6 +587,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,7 +597,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -603,6 +616,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -612,7 +626,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
