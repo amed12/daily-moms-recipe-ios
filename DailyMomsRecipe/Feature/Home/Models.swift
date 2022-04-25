@@ -84,11 +84,11 @@ struct Item: Codable, Hashable {
 
 extension Category{
     static var allCategory:[Category] = [Category(id: "popular", name: "Popular"),
-                Category(id: "appetizer", name: "Appetizer"),
-                Category(id: "main_course", name: "Main Course"),
-                Category(id: "dessert", name: "Dessert"),
-                Category(id: "beverages", name: "Beverages"),
-        ]
+                                         Category(id: "appetizer", name: "Appetizer"),
+                                         Category(id: "main_course", name: "Main Course"),
+                                         Category(id: "dessert", name: "Dessert"),
+                                         Category(id: "beverages", name: "Beverages"),
+    ]
     
     static func getSingleCategory(id :String) -> Category?{
         let index = allCategory.firstIndex{ $0.id == id }
@@ -101,17 +101,58 @@ extension Category{
 
 extension List{
     static var allList :[List] = [
-            List(categoryID: "popular", items: [(Item(id: "6176686afc13ae4e76000000", price: 1.5, displayPrice: 1.5, isDiscount: false, discountPercent: 0, imageURL: "https://picsum.photos/id/0/5616/3744", name: "Nectarine and beetroot salad", itemDescription: "A crisp salad featuring fresh nectarine and beetroot", tags: [
+        List(categoryID: "popular", items: [(Item(id: "6176686afc13ae4e76000000", price: 1.5, displayPrice: 1.5, isDiscount: false, discountPercent: 0, imageURL: "https://picsum.photos/id/0/5616/3744", name: "Nectarine and beetroot salad", itemDescription: "A crisp salad featuring fresh nectarine and beetroot", tags: [
             "white_cabbage",
             "lettuce",
             "tomato",
             "nectarine",
             "beetroot"
-            ]))]),
-            List(categoryID: "dessert", items: [(Item(id: "6176686afc13ae4e76000002", price: 8, displayPrice: 4, isDiscount: true, discountPercent: 50, imageURL: "https://picsum.photos/id/10/2500/1667", name: "Italian seasoning and potato starch salad", itemDescription: "Italian seasoning and potato starch served on a bed of lettuce", tags: [
-                "lettuce",
-                "italian_seasoning",
-                "potato_starch"
-            ]))])
-        ]
+        ])),
+        (Item(id: "6176686afc13ae4e76000001", price: 1.5, displayPrice: 1.5, isDiscount: false, discountPercent: 0, imageURL: "https://picsum.photos/id/0/5616/3744", name: "Nectarine and beetroot salad", itemDescription: "A crisp salad featuring fresh nectarine and beetroot", tags: [
+                                                "white_cabbage",
+                                                "lettuce",
+                                                "tomato",
+                                                "nectarine",
+                                                "beetroot"
+                                            ])),
+        (Item(id: "6176686afc13ae4e76000020", price: 1.5, displayPrice: 1.5, isDiscount: false, discountPercent: 0, imageURL: "https://picsum.photos/id/0/5616/3744", name: "Nectarine and beetroot salad", itemDescription: "A crisp salad featuring fresh nectarine and beetroot", tags: [
+                                                "white_cabbage",
+                                                "lettuce",
+                                                "tomato",
+                                                "nectarine",
+                                                "beetroot"
+                                            ]))]),
+        List(categoryID: "dessert", items: [(Item(id: "6176686afc13ae4e76000002", price: 8, displayPrice: 4, isDiscount: true, discountPercent: 50, imageURL: "https://picsum.photos/id/10/2500/1667", name: "Italian seasoning and potato starch salad", itemDescription: "Italian seasoning and potato starch served on a bed of lettuce", tags: [
+            "lettuce",
+            "italian_seasoning",
+            "potato_starch"
+        ])),
+        (Item(id: "6176686afc13ae4e76000042", price: 8, displayPrice: 4, isDiscount: true, discountPercent: 50, imageURL: "https://picsum.photos/id/10/2500/1667", name: "Italian seasoning and potato starch salad", itemDescription: "Italian seasoning and potato starch served on a bed of lettuce", tags: [
+                                                "lettuce",
+                                                "italian_seasoning",
+                                                "potato_starch"
+                                            ])),
+        (Item(id: "6176686afc13ae4e76000052", price: 8, displayPrice: 4, isDiscount: true, discountPercent: 50, imageURL: "https://picsum.photos/id/10/2500/1667", name: "Italian seasoning and potato starch salad", itemDescription: "Italian seasoning and potato starch served on a bed of lettuce", tags: [
+                                                                                    "lettuce",
+                                                                                    "italian_seasoning",
+                                                                                    "potato_starch"
+                                                                                ]))
+                                           ]),
+        List(categoryID: "beverages", items: [(Item(id: "6176686afc13ae4e76000002", price: 8, displayPrice: 4, isDiscount: true, discountPercent: 50, imageURL: "https://picsum.photos/id/10/2500/1667", name: "Italian seasoning and potato starch salad", itemDescription: "Italian seasoning and potato starch served on a bed of lettuce", tags: [
+            "lettuce",
+            "italian_seasoning",
+            "potato_starch"
+        ])),
+        (Item(id: "6176686afc13ae4e7600002", price: 8, displayPrice: 4, isDiscount: true, discountPercent: 50, imageURL: "https://picsum.photos/id/10/2500/1667", name: "Italian seasoning and potato starch salad", itemDescription: "Italian seasoning and potato starch served on a bed of lettuce", tags: [
+                                                "lettuce",
+                                                "italian_seasoning",
+                                                "potato_starch"
+                                            ])),
+        (Item(id: "6176686afc13ae4e7600003", price: 8, displayPrice: 4, isDiscount: true, discountPercent: 50, imageURL: "https://picsum.photos/id/10/2500/1667", name: "Italian seasoning and potato starch salad", itemDescription: "Italian seasoning and potato starch served on a bed of lettuce", tags: [
+                                                                                    "lettuce",
+                                                                                    "italian_seasoning",
+                                                                                    "potato_starch"
+                                                                                ]))
+                                           ])
+    ]
 }

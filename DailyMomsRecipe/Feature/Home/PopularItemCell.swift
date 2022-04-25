@@ -8,73 +8,89 @@
 import UIKit
 import SDWebImage
 class PopularItemCell: UICollectionViewCell {
-    static let reuseIdentifer = "popular-item-cell-reuse-identifier"
+    static let reuseIdentifer = "featured-album-item-cell-reuse-identifier"
     let titleLabel = UILabel()
-    let contentContainer = UIView()
+    let imageCountLabel = UILabel()
     let featuredPhotoView = UIImageView()
-    
-    var title: String? {
-        didSet {
-            configure()
-        }
-    }
-    
-    var featuredPhotoURL: URL? {
-        didSet {
-            configure()
-        }
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        configure()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
+    let contentContainer = UIView()
 
-extension PopularItemCell {
-    func configure() {
-        contentContainer.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(featuredPhotoView)
-        contentView.addSubview(contentContainer)
-        featuredPhotoView.translatesAutoresizingMaskIntoConstraints = false
-        if let featuredPhotoURL = featuredPhotoURL {
-          featuredPhotoView.sd_setImage(with: featuredPhotoURL, completed: nil)
-        }
-        featuredPhotoView.layer.cornerRadius = 4
-        featuredPhotoView.clipsToBounds = true
-        contentContainer.addSubview(featuredPhotoView)
-        
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.text = title
-        titleLabel.font = UIFont.preferredFont(forTextStyle: .headline)
-        titleLabel.adjustsFontForContentSizeCategory = true
-        titleLabel.textColor = .white
-        titleLabel.textAlignment = .center
-        titleLabel.layer.shadowColor = UIColor.black.cgColor
-        titleLabel.layer.shadowRadius = 3.0
-        titleLabel.layer.shadowOpacity = 1.0
-        titleLabel.layer.shadowOffset = CGSize(width: 4, height: 4)
-        titleLabel.layer.masksToBounds = false
-        contentContainer.addSubview(titleLabel)
-        
-        NSLayoutConstraint.activate([
-            contentContainer.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            contentContainer.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            contentContainer.topAnchor.constraint(equalTo: contentView.topAnchor),
-            contentContainer.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            
-            featuredPhotoView.leadingAnchor.constraint(equalTo: contentContainer.leadingAnchor),
-            featuredPhotoView.trailingAnchor.constraint(equalTo: contentContainer.trailingAnchor),
-            featuredPhotoView.topAnchor.constraint(equalTo: contentContainer.topAnchor),
-            
-            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            titleLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
-            titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
-        ])
+    var title: String? {
+      didSet {
+        configure()
+      }
     }
-}
+
+    var totalNumberOfImages: Int? {
+      didSet {
+        configure()
+      }
+    }
+
+    var featuredPhotoURL: URL? {
+      didSet {
+        configure()
+      }
+    }
+
+    override init(frame: CGRect) {
+      super.init(frame: frame)
+      configure()
+    }
+
+    required init?(coder: NSCoder) {
+      fatalError("init(coder:) has not been implemented")
+    }
+  }
+
+  extension PopularItemCell {
+    func configure() {
+      contentContainer.translatesAutoresizingMaskIntoConstraints = false
+
+      contentView.addSubview(featuredPhotoView)
+      contentView.addSubview(contentContainer)
+
+      featuredPhotoView.translatesAutoresizingMaskIntoConstraints = false
+      if let featuredPhotoURL = featuredPhotoURL {
+          featuredPhotoView.sd_setImage(with: featuredPhotoURL, completed: nil)
+      }
+      featuredPhotoView.layer.cornerRadius = 4
+      featuredPhotoView.clipsToBounds = true
+      contentContainer.addSubview(featuredPhotoView)
+
+      titleLabel.translatesAutoresizingMaskIntoConstraints = false
+      titleLabel.text = title
+      titleLabel.font = UIFont.preferredFont(forTextStyle: .subheadline)
+      titleLabel.adjustsFontForContentSizeCategory = true
+      contentContainer.addSubview(titleLabel)
+
+      imageCountLabel.translatesAutoresizingMaskIntoConstraints = false
+      if let totalNumberOfImages = totalNumberOfImages {
+        imageCountLabel.text = "\(totalNumberOfImages) photos"
+      }
+      imageCountLabel.font = UIFont.preferredFont(forTextStyle: .subheadline)
+      imageCountLabel.adjustsFontForContentSizeCategory = true
+      imageCountLabel.textColor = .placeholderText
+      contentContainer.addSubview(imageCountLabel)
+
+      let spacing = CGFloat(10)
+      NSLayoutConstraint.activate([
+        contentContainer.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+        contentContainer.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+        contentContainer.topAnchor.constraint(equalTo: contentView.topAnchor),
+        contentContainer.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+
+        featuredPhotoView.leadingAnchor.constraint(equalTo: contentContainer.leadingAnchor),
+        featuredPhotoView.trailingAnchor.constraint(equalTo: contentContainer.trailingAnchor),
+        featuredPhotoView.topAnchor.constraint(equalTo: contentContainer.topAnchor),
+
+        titleLabel.topAnchor.constraint(equalTo: featuredPhotoView.bottomAnchor, constant: spacing),
+        titleLabel.leadingAnchor.constraint(equalTo: featuredPhotoView.leadingAnchor),
+        titleLabel.trailingAnchor.constraint(equalTo: featuredPhotoView.trailingAnchor),
+
+        imageCountLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor),
+        imageCountLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+        imageCountLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+        imageCountLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+      ])
+    }
+  }
