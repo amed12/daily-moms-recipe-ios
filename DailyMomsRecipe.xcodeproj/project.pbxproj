@@ -20,6 +20,12 @@
 		4A7FB9FB280E9E3F009BD6E8 /* PopularItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FB9FA280E9E3F009BD6E8 /* PopularItemCell.swift */; };
 		4A7FB9FD280EA013009BD6E8 /* ContentItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FB9FC280EA013009BD6E8 /* ContentItemCell.swift */; };
 		4A7FB9FF280EA3B6009BD6E8 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FB9FE280EA3B6009BD6E8 /* Models.swift */; };
+		4A831B102817F14C003138B2 /* BaseEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A831B0F2817F14C003138B2 /* BaseEndPoint.swift */; };
+		4A831B122817F1FF003138B2 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A831B112817F1FF003138B2 /* Const.swift */; };
+		4A831B142817F2EF003138B2 /* BaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A831B132817F2EF003138B2 /* BaseFactory.swift */; };
+		4A831B162817F30C003138B2 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A831B152817F30C003138B2 /* BaseService.swift */; };
+		4A90AE7C281A594F0057A63E /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90AE7B281A594F0057A63E /* HomePresenter.swift */; };
+		4A90AE7E281A831C0057A63E /* Pokemin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90AE7D281A831C0057A63E /* Pokemin.swift */; };
 		4ACC763B280FC83200D3FB78 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC763A280FC83200D3FB78 /* HeaderView.swift */; };
 		4ACC763E280FCE7B00D3FB78 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC763D280FCE7B00D3FB78 /* Extension.swift */; };
 		A77FD6F06CC7131A21ED08A3 /* Pods_DailyMomsRecipeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94E798E5B344BE6DFAF8D70 /* Pods_DailyMomsRecipeTests.framework */; };
@@ -65,6 +71,12 @@
 		4A7FB9FA280E9E3F009BD6E8 /* PopularItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularItemCell.swift; sourceTree = "<group>"; };
 		4A7FB9FC280EA013009BD6E8 /* ContentItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentItemCell.swift; sourceTree = "<group>"; };
 		4A7FB9FE280EA3B6009BD6E8 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		4A831B0F2817F14C003138B2 /* BaseEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEndPoint.swift; sourceTree = "<group>"; };
+		4A831B112817F1FF003138B2 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		4A831B132817F2EF003138B2 /* BaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFactory.swift; sourceTree = "<group>"; };
+		4A831B152817F30C003138B2 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		4A90AE7B281A594F0057A63E /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		4A90AE7D281A831C0057A63E /* Pokemin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemin.swift; sourceTree = "<group>"; };
 		4ACC763A280FC83200D3FB78 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		4ACC763D280FCE7B00D3FB78 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		83B14BBDEDCE3CE287534EFC /* Pods-DailyMomsRecipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyMomsRecipe.debug.xcconfig"; path = "Target Support Files/Pods-DailyMomsRecipe/Pods-DailyMomsRecipe.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,12 +133,8 @@
 		4A32C37428080DD000629049 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				4A32C37528080DF800629049 /* HomeViewController.swift */,
-				4A32C37628080DF800629049 /* HomeViewController.xib */,
-				4A7FB9FA280E9E3F009BD6E8 /* PopularItemCell.swift */,
-				4A7FB9FC280EA013009BD6E8 /* ContentItemCell.swift */,
+				4A831B0D2817CCBB003138B2 /* View */,
 				4A7FB9FE280EA3B6009BD6E8 /* Models.swift */,
-				4ACC763A280FC83200D3FB78 /* HeaderView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -183,10 +191,36 @@
 			path = DailyMomsRecipeUITests;
 			sourceTree = "<group>";
 		};
+		4A831B0D2817CCBB003138B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A32C37528080DF800629049 /* HomeViewController.swift */,
+				4A32C37628080DF800629049 /* HomeViewController.xib */,
+				4A7FB9FA280E9E3F009BD6E8 /* PopularItemCell.swift */,
+				4A7FB9FC280EA013009BD6E8 /* ContentItemCell.swift */,
+				4ACC763A280FC83200D3FB78 /* HeaderView.swift */,
+				4A90AE7B281A594F0057A63E /* HomePresenter.swift */,
+				4A90AE7D281A831C0057A63E /* Pokemin.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A831B0E2817CD26003138B2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4A831B0F2817F14C003138B2 /* BaseEndPoint.swift */,
+				4A831B132817F2EF003138B2 /* BaseFactory.swift */,
+				4A831B152817F30C003138B2 /* BaseService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		4ACC763C280FCE6400D3FB78 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4A831B0E2817CD26003138B2 /* Network */,
 				4ACC763D280FCE7B00D3FB78 /* Extension.swift */,
+				4A831B112817F1FF003138B2 /* Const.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -456,11 +490,17 @@
 				4A59217D2807FD9200C4B98B /* AppDelegate.swift in Sources */,
 				4A59217F2807FD9200C4B98B /* SceneDelegate.swift in Sources */,
 				4A7FB9FD280EA013009BD6E8 /* ContentItemCell.swift in Sources */,
+				4A831B142817F2EF003138B2 /* BaseFactory.swift in Sources */,
 				4A7FB9FF280EA3B6009BD6E8 /* Models.swift in Sources */,
+				4A90AE7E281A831C0057A63E /* Pokemin.swift in Sources */,
 				4A7FB9FB280E9E3F009BD6E8 /* PopularItemCell.swift in Sources */,
+				4A831B102817F14C003138B2 /* BaseEndPoint.swift in Sources */,
 				4A32C37728080DF800629049 /* HomeViewController.swift in Sources */,
+				4A831B162817F30C003138B2 /* BaseService.swift in Sources */,
+				4A90AE7C281A594F0057A63E /* HomePresenter.swift in Sources */,
 				4ACC763B280FC83200D3FB78 /* HeaderView.swift in Sources */,
 				4ACC763E280FCE7B00D3FB78 /* Extension.swift in Sources */,
+				4A831B122817F1FF003138B2 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

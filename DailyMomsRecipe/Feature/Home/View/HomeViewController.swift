@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 
 class HomeViewController: UIViewController {
@@ -15,9 +16,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var menuCollectionView: UICollectionView!
     var buttonBar : UIView = UIView()
     static let sectionHeaderElementKind = "section-header-element-kind"
-    private var sections = List.allList
+    private var sections :[List] = []
     private lazy var dataSource = makeDataSource()
-    
+    private var cancellable: AnyCancellable?
     typealias DataSource = UICollectionViewDiffableDataSource<List, Item>
     typealias Snapshot = NSDiffableDataSourceSnapshot<List, Item>
     
@@ -26,7 +27,7 @@ class HomeViewController: UIViewController {
         headerImgView.image = UIImage(named: "dining")
         customSegmentedControl()
         configureCollectionView()
-        applySnapshot(animatingDifferences: false)
+        loadResource()
         // Do any additional setup after loading the view.
     }
     
@@ -172,6 +173,35 @@ class HomeViewController: UIViewController {
         }
         dataSource.apply(snapshot, animatingDifferences: animatingDifferences)
     }
+    
+    func loadResource() {
+        let queue = DispatchQueue.main
+        let networkService = BaseService()
+        cancellable = networkService.home()
+            .receive(on: queue)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .failure(let error):
+                    let errorMessage = "\(error.localizedDescription)"
+                    print(errorMessage)
+                case .finished:
+                    self.applySnapshot(animatingDifferences: false)
+                }
+                
+            }, receiveValue: { data in
+                do {
+                    let decoder = JSONDecoder()
+                    if let menus = try? decoder.decode(RestoData.self, from: data) as RestoData {
+                        
+                        menus.list.forEach{ item in
+                            self.sections.append(item)
+                        }
+                        } else {
+                            print("ERROR: Can't Decode JSON")
+                        }
+                }
+            })
+    }
 }
 
 extension HomeViewController :UICollectionViewDelegate{
@@ -180,6 +210,7 @@ extension HomeViewController :UICollectionViewDelegate{
             return
         }
         print("\(item.name)")
+       
     }
 }
 
